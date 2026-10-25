@@ -158,7 +158,24 @@ footer a{display:block;color:var(--ink);text-decoration:none;font-weight:500}
 <div id="lb" role="dialog" aria-label="Foto e zmadhuar"><button type="button">Mbyll</button><img alt=""></div>
 <script>
 var lb=document.getElementById('lb'),li=lb.querySelector('img');
-document.querySelectorAll('.grid button').forEach(function(b){b.onclick=function(){li.src=b.dataset.i;lb.classList.add('on')}});
+var grid=document.querySelector('.grid');
+grid.onclick=function(e){var b=e.target.closest('button');if(b){li.src=b.dataset.i;lb.classList.add('on')}};
+(async function(){
+var K='sag_gal_v2',files=null;
+try{var c=sessionStorage.getItem(K);if(c)files=JSON.parse(c)}catch(e){}
+try{
+if(!files){
+var r=await fetch('https://api.github.com/repos/elsafeimi/sag-decor/contents/punime');
+if(!r.ok)return;
+files=(await r.json()).filter(function(f){return f.type==='file'&&/\.(jpe?g|png|webp|gif|avif)$/i.test(f.name)}).map(function(f){return f.name}).sort(function(a,b){return a.localeCompare(b,undefined,{numeric:true})});
+try{sessionStorage.setItem(K,JSON.stringify(files))}catch(e){}
+}
+if(!files.length)return;
+grid.replaceChildren();
+files.forEach(function(n){var u='punime/'+encodeURIComponent(n),b=document.createElement('button'),im=document.createElement('img');
+b.dataset.i=u;b.setAttribute('aria-label','Zmadho foton');im.src=u;im.alt='Punim nga S.A.G Decor';im.loading='lazy';b.append(im);grid.append(b)});
+}catch(e){}
+})();
 lb.onclick=function(){lb.classList.remove('on')};
 document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
 document.getElementById('f').onsubmit=async function(e){
