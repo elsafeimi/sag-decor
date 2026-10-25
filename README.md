@@ -13,3 +13,4 @@ Përdor Railway ose një VPS (Render falas e fshin databazën kur rindizet).
 - Variablat: ADMIN_PASSWORD (detyrueshëm), ADMIN_USER, SMTP_* + NOTIFY_EMAIL për email
 - Shto një Volume/Disk dhe vendos `DB_PATH=/data/data.db` që kërkesat të mos humbin.
 - Lidh domain-in (p.sh. sagdecor.al) nga paneli i hostingut.
+.
