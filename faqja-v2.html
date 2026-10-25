@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sq"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>S.A.G Decor – Panele dekorative, WPC, akustike dhe PVC 3D</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--bg2:#f6f2ee;--ink:#1f1f23;--mute:#5d5a57;--amber:#b8212d;--red:#b8212d;--line:rgba(31,31,35,.14);--on-amber:#ffffff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141214;--bg2:#1e1a1c;--ink:#f4efec;--mute:#b3aaa6;--amber:#d93f4c;--red:#e04552;--line:rgba(244,239,236,.15);--on-amber:#ffffff;color-scheme:dark}}
+:root[data-theme="dark"]{color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{font:800 22px "Bricolage Grotesque",sans-serif;text-decoration:none;letter-spacing:-.02em}
+.logo b{color:var(--red)}
+nav{display:flex;gap:22px;align-items:center}
+nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--amber);color:var(--on-amber);font-weight:700;text-decoration:none;padding:13px 22px;border-radius:999px;border:0;font-size:16px;cursor:pointer;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn:hover{filter:brightness(1.08)}
+@media(max-width:760px){nav a:not(.btn){display:none}}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:56px 0 0}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.hero h1{font-size:clamp(42px,6.4vw,84px);font-weight:800}
+.hero p{color:var(--mute);max-width:46ch;margin:22px 0 30px;font-size:18px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.slats{position:relative;aspect-ratio:4/5;border-radius:6px;overflow:hidden;box-shadow:0 30px 70px -25px rgba(184,33,45,.35)}
+.slats img{width:100%;height:100%;object-fit:cover}
+.slats::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 22px,rgba(23,16,12,.55) 22px 26px);mix-blend-mode:multiply;pointer-events:none;opacity:.55}
+.led{height:4px;margin-top:52px;background:linear-gradient(90deg,transparent,var(--amber) 20%,var(--amber) 80%,transparent);box-shadow:0 0 24px 4px rgba(184,33,45,.35)}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.slats{aspect-ratio:1/1}}
+section{padding:84px 0}
+h2{font-size:clamp(32px,4.4vw,54px);font-weight:700;max-width:18ch}
+.lead{color:var(--mute);max-width:52ch;margin:16px 0 0}
+/* services */
+.svc{margin-top:46px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:1fr 1.2fr;gap:36px;align-items:center;padding:30px 0;border-bottom:1px solid var(--line)}
+.row:nth-child(even) .pic{order:2}
+.pic{aspect-ratio:16/10;overflow:hidden;border-radius:4px;background:var(--bg2)}
+.pic img{width:100%;height:100%;object-fit:cover}
+.row h3{font-size:clamp(26px,3.2vw,38px)}
+.row p{color:var(--mute);margin:12px 0 0;max-width:46ch}
+.row ul{margin:14px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.row li{border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:14px;color:var(--mute)}
+@media(max-width:760px){.row{grid-template-columns:1fr;gap:18px}.row:nth-child(even) .pic{order:0}}
+/* gallery */
+.gal{background:var(--bg2)}
+.gwrap{position:relative;margin-top:40px}
+.grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:14px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;overscroll-behavior-x:contain}
+.arr{position:absolute;top:calc(50% - 7px);transform:translateY(-50%);z-index:3;width:48px;height:48px;border-radius:50%;border:0;background:var(--amber);color:var(--on-amber);font-size:28px;line-height:1;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.35)}
+.arr.l{left:8px}.arr.r{right:8px}
+.arr:hover{filter:brightness(1.1)}
+.grid button{flex:0 0 auto;height:clamp(300px,54vh,520px);aspect-ratio:4/5;margin:0;padding:0;border:0;background:var(--bg);cursor:zoom-in;border-radius:6px;overflow:hidden;scroll-snap-align:start}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.grid button:hover img{transform:scale(1.04)}
+#lb{position:fixed;inset:0;background:rgba(10,6,3,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+#lb.on{display:flex}
+#lb img{max-height:90vh;max-width:94vw;object-fit:contain}
+#lb .lbn{top:50%;right:auto;width:52px;height:52px;padding:0;font-size:30px;line-height:1;transform:translateY(-50%)}
+#lb .lbn.p{left:14px}
+#lb .lbn.n{right:14px}
+#lb button{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:18px;background:var(--amber);color:var(--on-amber);border:0;border-radius:999px;padding:10px 18px;font-weight:700;cursor:pointer}
+/* price + form */
+.quote{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+@media(max-width:860px){.quote{grid-template-columns:1fr;gap:34px}}
+.note{margin-top:26px;padding:18px 20px;border-left:3px solid var(--amber);background:var(--bg2);color:var(--mute);font-size:16px}
+form{display:grid;gap:14px;background:var(--bg2);padding:28px;border-radius:6px;border:1px solid var(--line)}
+label{display:grid;gap:6px;font-weight:500;font-size:15px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:12px 14px;width:100%}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sm{font-size:14px;color:var(--mute);margin:0}
+/* about */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.about img{border-radius:4px;aspect-ratio:1/1;object-fit:cover;width:100%}
+.facts{display:grid;gap:14px;margin:26px 0 0;padding:0;list-style:none}
+.facts li{padding-left:20px;position:relative;color:var(--mute)}
+.facts li::before{content:"";position:absolute;left:0;top:.7em;width:10px;height:3px;background:var(--amber);box-shadow:0 0 8px var(--amber)}
+@media(max-width:860px){.about{grid-template-columns:1fr;gap:30px}}
+footer{border-top:1px solid var(--line);padding:42px 0 calc(42px + env(safe-area-inset-bottom,0px));color:var(--mute)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between}
+footer a{display:block;color:var(--ink);text-decoration:none;font-weight:500}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;box-shadow:0 8px 30px rgba(0,0,0,.45)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<header><div class="wrap">
+<a class="logo" href="#top">S.A.G <b>Decor</b></a>
+<nav><a href="#sherbimet">Shërbimet</a><a href="#punime">Punimet</a><a href="#oferte">Çmimi</a><a href="#rreth">Rreth nesh</a><a class="btn" href="tel:+355688077455">Telefono</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Një mur i ri, një shtëpi tjetër.</h1>
+<p>Panele me pamje druri, mermeri dhe guri, me ndriçim LED që e bën dhomën të ndritë. Montohen nga ekipi ynë në Tiranë. Na dërgoni përmasat dhe e përgatisim ofertën për ju.</p>
+<div class="cta"><a class="btn" href="#oferte">Kërko ofertë</a><a class="btn ghost" href="#punime">Shih punimet</a></div>
+</div>
+<div class="slats"><img src="punime/05-tv-panele-te-zeza.jpg" alt="Mur TV me panele WPC prej druri dhe pllakë mermeri me ndriçim LED"></div>
+</div><div class="led"></div></div>
+
+<section id="sherbimet"><div class="wrap">
+<h2>Gjithçka që i duhet murit tuaj</h2>
+<p class="lead">Nga salloni te dhoma e gjumit, ju ndihmojmë të zgjidhni materialin, ngjyrën dhe ndriçimin që i shkojnë më shumë shtëpisë suaj.</p>
+<div class="svc">
+<div class="row"><div class="pic"><img src="punime/07-sallon-llustra.jpg" alt="Mur dekorativ me panele pas televizorit" loading="lazy"></div><div><h3>Panele dekorative</h3><p>Muri pas televizorit bëhet zemra e sallonit. Druri, mermeri dhe drita e ngrohtë LED e kthejnë një mur të zakonshëm në atë që çdo mik e pyet kush ta ka bërë.</p><ul><li>Dhoma e ndenjes</li><li>Dhoma e gjumit</li><li>Hotele dhe apartamente</li></ul></div></div>
+<div class="row"><div class="pic"><img src="punime/16-hotel-dhome.jpg" alt="Dhomë hoteli me panele druri dhe ndriçim të ngrohtë" loading="lazy"></div><div><h3>Panele akustike</h3><p>Më shumë qetësi, më pak jehonë. Panelet akustike thithin zhurmën dhe i japin dhomës një pamje të ngrohtë druri, për zyra, lokale dhe shtëpi.</p><ul><li>Më pak jehonë</li><li>Zyra dhe lokale</li><li>Instalim i pastër</li></ul></div></div>
+<div class="row"><div class="pic"><img src="punime/28-dhome-ngrenie-tv.jpg" alt="Panele WPC në ngjyrë druri të çelët" loading="lazy" style="object-position:center 60%"></div><div><h3>Panele WPC</h3><p>Bukuria e drurit, pa merakun e drurit. WPC nuk frikësohet nga lagështira dhe zgjat me vite, brenda dhe jashtë shtëpisë.</p><ul><li>Rezistent ndaj lagështirës</li><li>Brenda dhe jashtë</li><li>Shumë ngjyra druri</li></ul></div></div>
+<div class="row"><div class="pic"><img src="punime/29-pvc-3d-mermer.jpg" alt="Panele PVC 3D me model mermeri dhe shirita druri" loading="lazy" style="object-position:center 40%"></div><div><h3>PVC pllaka fleksible 3D</h3><p>Pamja luksoze e mermerit dhe e gurit të gdhendur, pa peshën e tyre. Pllakat fleksibël lakohen me murin dhe montohen shpejt e pa pluhur.</p><ul><li>Model guri dhe mermeri</li><li>Montim i shpejtë</li><li>Sipërfaqe të lakuara</li></ul></div></div>
+</div></div></section>
+
+<section id="punime" class="gal"><div class="wrap">
+<h2>Punimet tona</h2>
+<p class="lead">Sallone, dhoma gjumi, hotele. Prekni një foto për ta parë nga afër.</p>
+<div class="gwrap"><button type="button" class="arr l" aria-label="Mbrapa">‹</button><button type="button" class="arr r" aria-label="Para">›</button><div class="grid" tabindex="0" aria-label="Galeria e punimeve"></div></div></div></section>
+
+<section id="oferte"><div class="wrap quote">
+<div>
+<h2>Sa kushton muri juaj?</h2>
+<p class="lead">Çdo hapësirë është ndryshe, ndaj çmimi llogaritet sipas përmasave, materialit dhe montimit. Na tregoni çfarë dëshironi dhe do t’ju kthejmë përgjigje me një ofertë të qartë.</p>
+<div class="note">Kërkesa na vjen direkt dhe ju kontaktojmë sa më shpejt në numrin që lini.</div>
+</div>
+<form id="f">
+<label>Emri<input name="n" required autocomplete="name"></label>
+<div class="two"><label>Telefoni<input name="t" type="tel" required autocomplete="tel"></label>
+<label>Sipërfaqja (m²)<input name="m" type="number" min="1" inputmode="decimal" placeholder="p.sh. 12"></label></div>
+<label>Çfarë ju duhet?<select name="s"><option>Panele dekorative</option><option>Panele akustike</option><option>Panele WPC</option><option>PVC pllaka fleksibël 3D</option><option>Nuk jam i sigurt</option></select></label>
+<label>Mesazhi<textarea name="x" rows="3" placeholder="Ku do të montohet, ngjyra që dëshironi…"></textarea></label>
+<input name="w" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
+<button class="btn" type="submit" id="sb">Dërgo kërkesën</button>
+<p class="sm" id="st" role="status"></p>
+<p class="sm">Ose telefononi: <a href="tel:+355688077455">068 807 7455</a></p>
+</form></div></section>
+
+<section id="rreth" class="gal"><div class="wrap about">
+<img src="punime/30-ekipi-ne-pune.jpg" alt="Ekipi i S.A.G Decor duke montuar një mur me panele" loading="lazy">
+<div>
+<h2>Çdo mur ka një histori. Le ta ndërtojmë tuajën.</h2>
+<p class="lead">Jemi një ekip në Tiranë që punon me panele, mermer dhe ndriçim LED. Na tregoni çfarë keni në mendje: ju ndihmojmë të zgjidhni materialin dhe ngjyrën, e montojmë vetë dhe e lëmë shtëpinë të pastër, gati për t’u shijuar.</p>
+<ul class="facts"><li>Këshillë për materialin, ngjyrën dhe ndriçimin.</li><li>Montim i pastër me ndriçim LED të integruar.</li><li>Punime për shtëpi, hotele, apartamente dhe lokale.</li></ul>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">
+<div><div class="logo">S.A.G <b>Decor</b></div><p>Dekor modern. Tiranë.</p></div>
+<div><a href="tel:+355688077455">+355 68 807 7455</a></div>
+<div><a href="https://www.instagram.com/s.a.g_decor" target="_blank" rel="noopener">Instagram @s.a.g_decor</a><a href="https://wa.me/355688077455" target="_blank" rel="noopener">WhatsApp</a></div>
+</div></footer>
+
+<a class="btn wa" href="https://wa.me/355688077455" target="_blank" rel="noopener">WhatsApp</a>
+<div id="lb" role="dialog" aria-label="Foto e zmadhuar"><button type="button">Mbyll</button><button type="button" class="lbn p" aria-label="Foto e mëparshme">‹</button><button type="button" class="lbn n" aria-label="Foto tjetër">›</button><img alt=""></div>
+<script>
+var lb=document.getElementById('lb'),li=lb.querySelector('img');
+var grid=document.querySelector('.grid');
+var cur=0;
+function show(i){var bs=grid.children;if(!bs.length)return;cur=(i+bs.length)%bs.length;li.src=bs[cur].dataset.i}
+grid.onclick=function(e){var b=e.target.closest('button');if(b){show([].indexOf.call(grid.children,b));lb.classList.add('on')}};
+document.querySelector('.arr.l').onclick=function(){grid.scrollBy({left:-grid.clientWidth*.8})};
+document.querySelector('.arr.r').onclick=function(){grid.scrollBy({left:grid.clientWidth*.8})};
+lb.querySelector('.p').onclick=function(e){e.stopPropagation();show(cur-1)};
+lb.querySelector('.n').onclick=function(e){e.stopPropagation();show(cur+1)};
+var BASE=["01-tv-mermer-druri.jpg", "02-mermer-me-led.jpg", "03-mur-bimor-panele-te-zeza.jpg", "04-dhome-gjumi-gur-led.jpg", "05-tv-panele-te-zeza.jpg", "06-lift-mermer.jpg", "07-sallon-llustra.jpg", "08-fasade-wpc.jpg", "09-hotel-koka-shtratit.jpg", "10-tv-mermer-bardhe.jpg", "11-pvc-3d-ari-e-zeze.jpg", "12-mur-bimor-druri.jpg", "13-dhome-gjumi-mermer.jpg", "14-tv-gri-me-ari.jpg", "15-fasade-furgon.jpg", "16-hotel-dhome.jpg", "17-mermer-ari-me-panele.jpg", "18-tv-raftet-bardhe.jpg", "19-gur-dekorativ.jpg", "20-tv-ndricim-led.jpg", "21-mur-bimor-ballkon.jpg", "22-pasqyre-me-led.jpg", "23-mur-i-verdhe-druri.jpg", "24-sallon-mermer-gri.jpg", "25-tv-gur-dekorativ.jpg", "26-mermer-me-raftet.jpg", "27-koka-shtratit-druri.jpg", "28-dhome-ngrenie-tv.jpg", "29-pvc-3d-mermer.jpg", "30-ekipi-ne-pune.jpg"];
+function render(files){grid.replaceChildren();files.forEach(function(n){var u='punime/'+encodeURIComponent(n),b=document.createElement('button'),im=document.createElement('img');
+b.dataset.i=u;b.setAttribute('aria-label','Zmadho foton');im.src=u;im.alt='Punim nga S.A.G Decor';im.loading='lazy';b.append(im);grid.append(b)})}
+render(BASE);
+(async function(){
+try{
+var r=await fetch('https://api.github.com/repos/elsafeimi/sag-decor/contents/punime');
+if(!r.ok)return;
+var files=(await r.json()).filter(function(f){return f.type==='file'&&/\.(jpe?g|png|webp|gif|avif)$/i.test(f.name)}).map(function(f){return f.name}).sort(function(a,b){return a.localeCompare(b,undefined,{numeric:true})});
+if(files.length&&files.join()!==BASE.join())render(files);
+}catch(e){}
+})();
+lb.onclick=function(){lb.classList.remove('on')};
+document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+document.getElementById('f').onsubmit=async function(e){
+e.preventDefault();var f=e.target,d=new FormData(f),st=document.getElementById('st'),sb=document.getElementById('sb');
+sb.disabled=true;st.textContent='Duke dërguar…';
+try{
+var p={access_key:'4eb9b29c-6c5d-41fb-bc1e-59a3a8f2bef1',subject:'Kërkesë e re nga '+d.get('n')+' (S.A.G Decor)',from_name:'S.A.G Decor website',name:d.get('n'),phone:d.get('t'),service:d.get('s'),area_m2:d.get('m')||'-',message:d.get('x')||'-'};
+if(d.get('w'))p.botcheck=true;
+var r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(p)});
+var j=await r.json();
+if(!r.ok||!j.success)throw new Error('');
+f.reset();st.textContent='Faleminderit! Kërkesa u dërgua. Do t’ju kontaktojmë së shpejti.';
+}catch(err){st.textContent='Kërkesa nuk u dërgua. Na shkruani direkt në WhatsApp ose na telefononi në 068 807 7455.'}
+sb.disabled=false};
+</script></body></html>
