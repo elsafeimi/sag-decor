@@ -87,8 +87,7 @@ input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:
 .facts li::before{content:"";position:absolute;left:0;top:.7em;width:10px;height:3px;background:var(--amber);box-shadow:0 0 8px var(--amber)}
 @media(max-width:860px){.about{grid-template-columns:1fr;gap:30px}}
 footer{border-top:1px solid var(--line);padding:42px 0 calc(42px + env(safe-area-inset-bottom,0px));color:var(--mute)}
-footer .wrap{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between}
-footer a{display:block;color:var(--ink);text-decoration:none;font-weight:500}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:center;text-align:center}footer .wrap>div:first-child{flex-basis:100%}footer .wrap>div:not(:first-child){display:contents}footer p{margin:6px 0 14px}footer{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}footer a{display:block;color:var(--ink);text-decoration:none;font-weight:500}
 .wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;box-shadow:0 8px 30px rgba(0,0,0,.45)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style></head><body>
