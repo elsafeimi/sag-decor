@@ -185,7 +185,7 @@ document.getElementById('f').onsubmit=async function(e){
 e.preventDefault();var f=e.target,d=new FormData(f),st=document.getElementById('st'),sb=document.getElementById('sb');
 sb.disabled=true;st.textContent='Duke dërguar…';
 try{
-var p={access_key:'4eb9b29c-6c5d-41fb-bc1e-59a3a8f2bef1',subject:'Kërkesë e re nga '+d.get('n')+' (S.A.G Decor)',from_name:'S.A.G Decor website',name:d.get('n'),phone:d.get('t'),service:d.get('s'),area_m2:d.get('m')||'-',message:d.get('x')||'-'};
+var p={access_key:'775ff4e7-fb21-4d3c-88e3-173a97c8b35f',subject:'Kërkesë e re nga '+d.get('n')+' (S.A.G Decor)',from_name:'S.A.G Decor website',name:d.get('n'),phone:d.get('t'),service:d.get('s'),area_m2:d.get('m')||'-',message:d.get('x')||'-'};
 if(d.get('w'))p.botcheck=true;
 var r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(p)});
 var j=await r.json();
